@@ -1,16 +1,16 @@
-const { array3 } = require('./array');
+const { array } = require('./array');
 
-describe('array3',()=>{
+describe('array',()=>{
     test('Happy path: numeros=[5,5,5]=>5', ()=>{
-        expect(array3([5,5,5])).toBe(5)
+        expect(array([5,5,5])).toBe(5)
     })
     test('Happy path: numeros=[6,6,6]=>6', ()=>{
-        expect(array3([6,6,6])).toBe(6)
+        expect(array([6,6,6])).toBe(6)
     })
     test('Sad path: numeros inválido', ()=>{
-        expect(()=>array3(0).toThrow('numeros no es un arreglo'))
-        expect(()=>array3([]).toThrow('numeros no es un arreglo'))
-        expect(()=>array3('10').toThrow('numeros no es un arreglo'))
+        expect(()=>array(0).toThrow('numeros no es un arreglo'))
+        expect(()=>array([]).toThrow('numeros no es un arreglo'))
+        expect(()=>array('10').toThrow('numeros no es un arreglo'))
     })
 
 })

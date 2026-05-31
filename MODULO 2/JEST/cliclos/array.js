@@ -1,4 +1,4 @@
-function array3(numeros){
+function array(numeros){
     if (!Array.isArray(numeros) || numeros.length === 0 || numeros.length > 3) 
         throw new TypeError('numeros no es un arreglo');
     let total = 0;

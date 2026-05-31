@@ -1,4 +1,4 @@
-function sumaHasta(n){
+function sumarHasta(n){
     if (!Number.isInteger(n) || n<1) 
         throw new TypeError('n debe ser entero>=1');
     let total = 0;

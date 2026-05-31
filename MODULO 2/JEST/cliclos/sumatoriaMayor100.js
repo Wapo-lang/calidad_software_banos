@@ -1,4 +1,4 @@
-function sumatoria_mayor_100(numeros){
+function sumatoriaMayor100(numeros){
     if (!Array.isArray(numeros) || numeros.length === 0) 
         throw new TypeError('numeros invalidos');
     let sumatoria = 0;

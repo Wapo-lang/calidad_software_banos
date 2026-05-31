@@ -1,5 +1,6 @@
-function puedeConducir(edad) {
-    if (!Number.isInteger(edad) || edad < 0)
-        throw new TypeError('edad debe ser un entero no negativo');
-    return edad >= 18;
+function puedeConducir(edad){
+    if(!Number.isInteger(edad)||edad<0)
+        throw new TypeError('edad invalida');
+    return edad>=18 ? 'Si':'No';
 }
+module.exports={ puedeConducir }
