@@ -22,8 +22,8 @@ git commit -m "feat: new function calcular resta"
 ````
 configuraciones basicas
 ````
-git config --global user.name "Diego Calderon"
-git config --global user.email "dmcalderonc97@gmail.com"
+git config --global user.name "Carlos Baños"
+git config --global user.email "cdavid107@hotmail.com"
 git config --global core.editor "code --wait"
 git config --global color.ui auto
 git config --global init.defaultBranch main
