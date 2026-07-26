@@ -8,6 +8,6 @@ export default defineConfig({
     supportFile: 'cypress/support/e2e.ts',
   },
   env: {
-    apiUrl: 'http://localhost:3000',
+    apiUrl: 'https://higuera-blog.uaeftt-ute.site',
   },
 })

@@ -35,7 +35,7 @@ describe('Login', () => {
     cy.location('pathname').should('eq', '/')
   })
 
-    it('muestra un error con credenciales inválidas', () => {
+  it('muestra un error con credenciales inválidas', () => {
     // El interceptor de axios (src/api/http.ts) muestra el toast de error pero
     // igual re-lanza el rechazo de la promesa, y LoginPage no lo atrapa. Como
     // esa promesa rechazada nunca es manejada, el navegador la reporta como
@@ -51,7 +51,7 @@ describe('Login', () => {
     cy.contains('Invalid credentials').should('be.visible')
     cy.location('pathname').should('eq', '/login')
   })
-  
+
 })
 
 describe('Rutas protegidas', () => {
@@ -59,7 +59,7 @@ describe('Rutas protegidas', () => {
     cy.visit('/categorias')
     cy.location('pathname').should('eq', '/login')
   })
-it('el logout limpia el token y vuelve a redirigir', () => {
+  it('el logout limpia el token y vuelve a redirigir', () => {
     cy.loginByApi(uniqueUsername(), uniqueEmail(), 'secret123', '/categorias')
     cy.location('pathname').should('eq', '/categorias')
 
@@ -75,6 +75,5 @@ it('el logout limpia el token y vuelve a redirigir', () => {
     cy.location('pathname').should('eq', '/login')
   })
 })
-
 
 
