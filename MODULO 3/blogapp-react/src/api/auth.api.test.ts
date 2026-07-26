@@ -3,12 +3,12 @@ import { login } from './auth.api'
 
 describe('login()', () => {
   it('should return the access token on valid credentials', async () => {
-    const token = await login({ username: 'carrera', password: 'secret' })
+    const token = await login({ username: 'canar', password: 'secret' })
     expect(token).toBe('fake-jwt-token')
   })
 
   it('should reject when the credentials are invalid', async () => {
-    await expect(login({ username: 'carrera', password: 'wrong' })).rejects.toMatchObject({
+    await expect(login({ username: 'canar', password: 'wrong' })).rejects.toMatchObject({
       response: { status: 401 },
     })
   })

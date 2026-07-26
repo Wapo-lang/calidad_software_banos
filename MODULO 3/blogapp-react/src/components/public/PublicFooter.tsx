@@ -2,7 +2,7 @@
 export default function PublicFooter() {
   return (
     <footer className="border-t p-4 text-center text-sm text-muted-foreground">
-      © {new Date().getFullYear()} BlogApp Carrera
+      © {new Date().getFullYear()} BlogApp Cañar
     </footer>
   )
 }

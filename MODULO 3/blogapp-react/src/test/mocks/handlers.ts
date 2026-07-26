@@ -8,7 +8,7 @@ const BASE_URL = import.meta.env.VITE_API_BASE_URL
 export const handlers = [
   http.post(`${BASE_URL}/auth/login`, async ({ request }) => {
     const body = (await request.json()) as LoginPayload
-    if (body.username === 'carrera' && body.password === 'secret') {
+    if (body.username === 'canar' && body.password === 'secret') {
       return HttpResponse.json({
         success: true,
         message: 'Login exitoso',
